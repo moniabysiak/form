@@ -16,7 +16,7 @@
     <main>
         <section>
             <form>
-                <fieldset class="person">
+                <fieldset>
                     <legend> Dane osobowe </legend>
                     <p>
                         <label for="name">Imię: </label>
@@ -31,40 +31,69 @@
                         <input required placeholder="Twój wiek" id="age" type="number" name="age" />
                     </p>
 
-                    <legend>Płeć:</legend>
-                    <p>
-                        <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
-                    </p>
-                    <p>
-                        <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
-                    </p>
-                    <p>
-                        <label for="email">E-mail: </label>
-                        <input required placeholder="Twój e-amil" id="email" type="email" name="email" />
-                    </p>
+                    <label for="gender">Płeć:</legend>
+                        <p>
+                            <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
+                        </p>
+                        <p>
+                            <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
+                        </p>
+                        <p>
+                            <label for="email">E-mail: </label>
+                            <input required placeholder="Twój e-amil" id="email" type="email" name="email" />
+                        </p>
                 </fieldset>
-<fieldset>
-                <p><legend> Jaki sport uprawiasz?</legend></p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="jogging" name="sport" /> bieganie </label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="swimming" name="sport" /> pływanie </label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="volleyball" name="sport" /> siatkówka</label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="martial-arts" name="sport" /> sporty walki</label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="dancing" name="sport" /> taniec</label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="gym" name="sport" /> siłownia</label>
-                </p>
-                <p>
-                    <label><input id="sport" type="checkbox" value="different" name="sport" /> inne</label>
+                <fieldset>
+                    <legend> Pytania dotyczące aktywności fizycznej</legend>
+                    <p>
+                        <legend> 1. Jaki sport uprawiasz?</legend>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="jogging" name="sport" /> bieganie </label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="swimming" name="sport" /> pływanie </label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="volleyball" name="sport" /> siatkówka</label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="martial-arts" name="sport" /> sporty
+                            walki</label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="dancing" name="sport" /> taniec</label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="gym" name="sport" /> siłownia</label>
+                    </p>
+                    <p>
+                        <label><input id="sport" type="checkbox" value="different" name="sport" /> inne</label>
+
+                    <p>
+                        <label for="frequency"> 2. Jak często jesteś aktywna/-y fizycznie?</label>
+                    <p>
+                        <select id="frequency" name="frequency">
+                            <option value="less-than-once"> rzadziej niż raz w tygodniu </option>
+                            <option value="once"> raz w tygodniu </option>
+                            <option value="twice"> dwa razy w tygodniu </option>
+                            <option value="three"> trzy razy w tygodniu </option>
+                            <option value="four"> cztery razy w tygodniu </option>
+                            <option value="five"> pięć razy w tygodniu </option>
+                            <option value="six"> sześć razy w tygodniu </option>
+                            <option value="everyday"> codziennie </option>
+                        </select>
+                    </p>
+                    </p>
+                    <p>
+                        <label for="steps"> 3. Podaj ile kroków dziennie robisz (1 000 - 20 000): </label><br><br>
+                        <input id= "steps" name="steps" type="range" min="1000" max="20000" step="1000">
+                    </p>
+                    <p>
+                        <label for="comment"> 4. Napisz proszę, jakie widzisz zalety uprawiania sportu:</label><br><br>
+                        <textarea id="comment" name="comment"></textarea>
+                    </p>
+
                 </fieldset>
             </form>
         </section>
