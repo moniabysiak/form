@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(187, 235, 187);;
+}
+
+h1 {
+    color: rgb(102, 102, 102);
+    padding: 24px;
+}
+
+fieldset {
+    margin: 24px;
+}

@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz</title>
     <link href="/normalize.css" rel="stylesheet" type="text/css">
-	<link href="/style.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <h1> Ankieta dotycząca aktywności fizycznej</h1>
     </header>
     <main>
-        
+        <section>
+            <form>
+                <fieldset class="person">
+                    <legend> Dane osobowe </legend>
+                    <p>
+                        <label for="name">Imię: </label>
+                        <input required placeholder="Twoje imię" id="name" type="text" name="name" />
+                    </p>
+                    <p>
+                        <label for="surname">Nazwisko: </label>
+                        <input placeholder="Twoje nazwisko" id="surname" type="text" name="surname" />
+                    </p>
+                    <p>
+                        <label for="age">Wiek: </label>
+                        <input required placeholder="Twój wiek" id="age" type="number" name="age" />
+                    </p>
+
+                    <legend>Płeć:</legend>
+                    <p>
+                        <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
+                    </p>
+                    <p>
+                        <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input required placeholder="Twój e-amil" id="email" type="email" name="email" />
+                    </p>
+                </fieldset>
+<fieldset>
+                <p><legend> Jaki sport uprawiasz?</legend></p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="jogging" name="sport" /> bieganie </label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="swimming" name="sport" /> pływanie </label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="volleyball" name="sport" /> siatkówka</label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="martial-arts" name="sport" /> sporty walki</label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="dancing" name="sport" /> taniec</label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="gym" name="sport" /> siłownia</label>
+                </p>
+                <p>
+                    <label><input id="sport" type="checkbox" value="different" name="sport" /> inne</label>
+                </fieldset>
+            </form>
+        </section>
     </main>
 </body>
+
 </html>
