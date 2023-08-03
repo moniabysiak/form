@@ -11,9 +11,9 @@
 
 <body>
     <main>
-    <header>
-        <h1> Ankieta dotycząca aktywności fizycznej</h1>
-    </header>
+        <header>
+            <h1> Ankieta dotycząca aktywności fizycznej</h1>
+        </header>
         <section>
             <form action="https://forms.cotenfrontend.pl">
                 <fieldset>
@@ -31,22 +31,22 @@
                         <input required placeholder="Twój wiek" id="age" type="number" name="age" />
                     </p>
 
-                    <label for="gender">Płeć:</legend>
-                        <p>
-                            <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
-                        </p>
-                        <p>
-                            <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
-                        </p>
-                        <p>
-                            <label for="email">E-mail: </label>
-                            <input required placeholder="Twój e-amil" id="email" type="email" name="email" />
-                        </p>
+                    <label for="gender">Płeć:</label>
+                    <p>
+                        <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
+                    </p>
+                    <p>
+                        <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input required placeholder="Twój e-amil" id="email" type="email" name="email" />
+                    </p>
                 </fieldset>
                 <fieldset>
                     <legend> Pytania dotyczące aktywności fizycznej</legend>
                     <p>
-                        <legend> 1. Jaki sport uprawiasz?</legend>
+                        <label for="sport"> 1. Jaki sport uprawiasz?</label>
                     </p>
                     <p>
                         <label><input id="sport" type="checkbox" value="jogging" name="sport" /> bieganie </label>
@@ -72,6 +72,7 @@
 
                     <p>
                         <label for="frequency"> 2. Jak często jesteś aktywna/-y fizycznie?</label>
+                    </p>
                     <p>
                         <select id="frequency" name="frequency">
                             <option value="less-than-once"> rzadziej niż raz w tygodniu </option>
@@ -84,10 +85,9 @@
                             <option value="everyday"> codziennie </option>
                         </select>
                     </p>
-                    </p>
                     <p>
                         <label for="steps"> 3. Podaj ile kroków dziennie robisz (1 000 - 20 000): </label><br><br>
-                        <input id= "steps" name="steps" type="range" min="1000" max="20000" step="1000">
+                        <input id="steps" name="steps" type="range" min="1000" max="20000" step="1000">
                     </p>
                     <p>
                         <label for="comment"> 4. Napisz proszę, jakie widzisz zalety uprawiania sportu:</label><br><br>
@@ -95,7 +95,7 @@
                     </p>
                 </fieldset>
                 <p>
-                    <input type="submit" value="wyślij"/>
+                    <input type="submit" value="wyślij" />
                 </p>
             </form>
         </section>
