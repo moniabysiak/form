@@ -15,9 +15,11 @@
             <h1> Ankieta dotycząca aktywności fizycznej</h1>
         </header>
         <section>
-            <form action="https://forms.cotenfrontend.pl">
+            <form action="https://forms.cotenfrontend.pl" method="post">
                 <fieldset>
+
                     <legend> Dane osobowe </legend>
+
                     <p>
                         <label for="name">Imię: </label>
                         <input required placeholder="Twoje imię" id="name" type="text" name="name" />
@@ -31,12 +33,12 @@
                         <input required placeholder="Twój wiek" id="age" type="number" name="age" />
                     </p>
 
-                    <label for="gender">Płeć:</label>
+                    <label>Płeć:</label>
                     <p>
-                        <label><input id="gender" type="radio" value="woman" name="gender" /> Kobieta</label>
+                        <label><input type="radio" value="woman" name="gender" /> Kobieta</label>
                     </p>
                     <p>
-                        <label> <input id="gender" type="radio" value="man" name="gender" /> Mężczyzna</label>
+                        <label> <input type="radio" value="man" name="gender" /> Mężczyzna</label>
                     </p>
                     <p>
                         <label for="email">E-mail: </label>
@@ -44,40 +46,43 @@
                     </p>
                 </fieldset>
                 <fieldset>
+
                     <legend> Pytania dotyczące aktywności fizycznej</legend>
+
                     <p>
-                        <label for="sport"> 1. Jaki sport uprawiasz?</label>
+                        <label> 1. Jaki sport uprawiasz?</label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="jogging" name="sport" /> bieganie </label>
+                        <label><input type="checkbox" value="jogging" name="sport" /> bieganie </label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="swimming" name="sport" /> pływanie </label>
+                        <label><input type="checkbox" value="swimming" name="sport" /> pływanie </label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="volleyball" name="sport" /> siatkówka</label>
+                        <label><input type="checkbox" value="volleyball" name="sport" /> siatkówka</label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="martial-arts" name="sport" /> sporty
+                        <label><input type="checkbox" value="martial-arts" name="sport" /> sporty
                             walki</label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="dancing" name="sport" /> taniec</label>
+                        <label><input type="checkbox" value="dancing" name="sport" /> taniec</label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="gym" name="sport" /> siłownia</label>
+                        <label><input type="checkbox" value="fitness" name="sport" /> zajęcia fitness</label>
                     </p>
                     <p>
-                        <label><input id="sport" type="checkbox" value="different" name="sport" /> inne</label>
+                        <label><input type="checkbox" value="gym" name="sport" /> siłownia</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" value="different" name="sport" /> inne</label>
 
                     <p>
                         <label for="frequency"> 2. Jak często jesteś aktywna/-y fizycznie?</label>
-                    </p>
-                    <p>
                         <select id="frequency" name="frequency">
                             <option value="less-than-once"> rzadziej niż raz w tygodniu </option>
                             <option value="once"> raz w tygodniu </option>
-                            <option value="twice"> dwa razy w tygodniu </option>
+                            <option selected value="twice"> dwa razy w tygodniu </option>
                             <option value="three"> trzy razy w tygodniu </option>
                             <option value="four"> cztery razy w tygodniu </option>
                             <option value="five"> pięć razy w tygodniu </option>
@@ -95,7 +100,7 @@
                     </p>
                 </fieldset>
                 <p>
-                    <input type="submit" value="wyślij" />
+                    <input class="button" type="submit" value="wyślij" />
                 </p>
             </form>
         </section>
